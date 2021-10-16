@@ -97,6 +97,7 @@ var (
 			Computed:      true,
 			ForceNew:      true,
 			ConflictsWith: []string{"name_prefix"},
+			ValidateFunc:  validation.StringLenBetween(1, 80),
 		},
 
 		"name_prefix": {
